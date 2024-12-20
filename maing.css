@@ -1,0 +1,64 @@
+.container {
+
+ background-color: rgb(250, 215, 221);
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+ width: 1440px;
+ height: 1000px;
+}
+
+
+.column  div {
+display: grid;
+grid-template-columns: repeat(4 , 100px);
+grid-template-rows: repeat(3 , 100px);
+gap: 10px;
+display: inline-flex;
+border-radius: 20px;
+
+}
+
+.column .col1 {
+     width: 250px;
+    height: 400px; 
+    background-color: hsl(31, 66%, 93%) ;
+    font-size: x-large;
+}
+
+.col1 span {
+
+    color:hsl(256, 67%, 59%) ;
+}
+
+.col2 {
+  font-weight: bolder;
+  font-size: x-large;
+    background-color:purple ;
+ color: white;
+   width: 350px;
+    height: 250px; 
+    /* grid-column: span 2; */
+    
+}
+.col2 span {
+    color: bisque;
+}
+
+.col2 .span2 {
+    font-weight: lighter;
+    font-size: small;
+    color: white;
+}
+
+.col3 pre {
+    background-color: rgb(216, 171, 216);
+    height: 300px;
+    width:300px ;
+    grid-row: ;
+}
+
+.container .col3 pre {
+    grid-row: span 3;
+   
+} 
